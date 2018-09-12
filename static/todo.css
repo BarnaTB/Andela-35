@@ -1,0 +1,26 @@
+body {
+    background-color: #ededed;
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+nav,
+nav a {
+    background-color: #5c64f8;
+    color: #ffffff;
+    padding: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #5c64f8;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.active{
+    background-color: #ffffff;
+    color: #5c64f8;
+}
