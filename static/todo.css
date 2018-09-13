@@ -12,6 +12,7 @@ nav a {
     color: #ffffff;
     padding: 25px;
     text-decoration: none;
+    margin-right: 0%;
 }
 
 nav a:hover {
@@ -20,7 +21,119 @@ nav a:hover {
     background-color: #ffffff;
 }
 
-.active{
+.active {
     background-color: #ffffff;
     color: #5c64f8;
+}
+
+h1 {
+    background-color: #bbb9b9;
+    border-radius: 15px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    padding: 30px;
+}
+
+input {
+    display: block;
+    margin: auto;
+    padding: 13px;
+    border: 1px solid #ffffff;
+}
+
+.table tr input {
+    display: inline;
+}
+
+.form {
+    display: inline;
+}
+
+form>input {
+    width: 40%
+}
+
+form #submit-btn {
+    width: 8%;
+    background-color: #6164f7;
+    color: #ffffff;
+}
+
+form #submit-btn:hover {
+    background-color: #ffffff;
+    color: #6164f7;
+    transition: 0.6s;
+    cursor: pointer;
+    border-color: #6164f7;
+}
+
+#task-btn {
+    background-color: #6164f7;
+    color: #ffffff;
+}
+
+#task-btn:hover {
+    background-color: #ffffff;
+    color: #6164f7;
+    cursor: pointer;
+    transition: 0.6s;
+    border-color: #6164f7;
+}
+
+form input {
+    display: inline;
+}
+
+tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: -5%;
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    background-color: #bbb9b9;
+    border: 1px solid #bbb9b9;
+    /* border-radius: 15px; */
+    margin-top: 30px;
+}
+
+tr #done {
+    margin-left: 20%;
+    margin-right: -20%;
+    /* padding: 30px; */
+    /* width: 30px; */
+}
+
+h3 {
+    background-color: #5c64f8;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 58%;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#cross-through {
+    text-decoration: red line-through;
+}
+
+#delete-btn {
+    background-color: darkred;
+    color: #ffffff;
+}
+
+#delete-btn:hover {
+    background-color: #ffffff;
+    color: darkred;
+    cursor: pointer;
+    transition: 0.6s;
+    border-color: darkred;
 }
