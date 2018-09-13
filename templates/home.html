@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To-Do My Lists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/todo.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="active" href="../templates/home.html">Home</a>
+        <a href="../templates/my-lists.html">My Lists</a>
+        <a href="../templates/profile.html">Profile</a>
+    </nav>
+    <h1>Create your to-do list here</h1>
+    <div class="form">
+        <form action="#" class="">
+            <input id="todo-input" name="todo input" type="text" placeholder="Add the list title" required>
+            <input id="submit-btn" type="submit" value="Create List">
+        </form>
+    </div>
+    <div class="table">
+        <h3>Today's list</h3>
+        <table>
+            <thead>
+                <th>Status</th>
+                <th>Task</th>
+                <th>Delete</th>
+            </thead>
+            <tr>
+                <td>Check the box when task is done</td>
+                <td>
+                    <input type="text" placeholder="Add a task to this list">
+                    <input id="task-btn" type="submit" value="Add Task">
+                </td>
+                <td>Click to delete a task</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="done" id="done">
+                </td>
+                <td>
+                    <p>Eat a burgher</p>
+                </td>
+                <td>
+                    <input id="delete-btn" type="button" value="Delete Task">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="done" id="done">
+                </td>
+                <td>
+                    <p>Eat a hen</p>
+                </td>
+                <td>
+                    <input id="delete-btn" type="button" value="Delete Task">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p id="cross-through">Sleep</p>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
