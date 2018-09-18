@@ -75,8 +75,12 @@ input {
     border: 1px solid #ffffff;
 }
 
-.table tr input {
-    display: inline;
+.add-task>input {
+    margin-top: 20px;
+}
+
+.task-input {
+    width: 52%;
 }
 
 .form {
@@ -84,7 +88,7 @@ input {
 }
 
 form>input {
-    width: 40%
+    width: 51%
 }
 
 form #submit-btn {
