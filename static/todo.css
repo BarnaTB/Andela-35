@@ -1,9 +1,39 @@
 body {
-    background-color: #ededed;
     font-size: 1em;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Karla', sans-serif;
     text-align: center;
+    margin: 0;
+}
+
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
+    background-image: url(../images/jess-watters-555452-unsplash.jpg);
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.content {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 0 auto;
 }
 
 nav,
@@ -12,6 +42,7 @@ nav a {
     color: #ffffff;
     padding: 25px;
     text-decoration: none;
+    /* margin: 0; */
 }
 
 nav a:hover {
@@ -20,7 +51,135 @@ nav a:hover {
     background-color: #ffffff;
 }
 
-.active{
+.active {
     background-color: #ffffff;
     color: #5c64f8;
+}
+
+h1 {
+    background-color: #bbb9b9;
+    opacity: 0.7;
+    border-radius: 15px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    padding: 30px;
+}
+
+input {
+    display: inline;
+    margin: auto;
+    padding: 13px;
+    border: 1px solid #ffffff;
+}
+
+.add-task>input {
+    margin-top: 20px;
+}
+
+.task-input {
+    width: 52%;
+}
+
+.form {
+    display: inline;
+}
+
+form>input {
+    width: 51%
+}
+
+form #submit-btn {
+    width: 100px;
+    background-color: #6164f7;
+    color: #ffffff;
+}
+
+form #submit-btn:hover {
+    background-color: #ffffff;
+    color: #6164f7;
+    transition: 0.6s;
+    cursor: pointer;
+    border-color: #6164f7;
+}
+
+#task-btn {
+    background-color: #6164f7;
+    color: #ffffff;
+}
+
+#task-btn:hover {
+    background-color: #ffffff;
+    color: #6164f7;
+    cursor: pointer;
+    transition: 0.6s;
+    border-color: #6164f7;
+}
+
+form input {
+    display: inline;
+}
+
+tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: -5%;
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    background-color: #bbb9b9;
+    border: 1px solid #bbb9b9;
+    /* border-radius: 15px; */
+    margin-top: 30px;
+}
+
+tr #done {
+    margin-left: 20%;
+    margin-right: -20%;
+    /* padding: 30px; */
+    /* width: 30px; */
+}
+
+h3 {
+    background-color: #5c64f8;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 58%;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#cross-through {
+    text-decoration: red line-through;
+}
+
+#delete-btn {
+    background-color: darkred;
+    color: #ffffff;
+}
+
+#delete-btn:hover {
+    background-color: #ffffff;
+    color: darkred;
+    cursor: pointer;
+    transition: 0.6s;
+    border-color: darkred;
+}
+
+footer {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 725px){
+    h1 {
+        width: 80%;
+    }
 }

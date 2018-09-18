@@ -27,7 +27,7 @@ body {
 }
 
 .content {
-    position: relative;
+    position: fixed;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -42,6 +42,7 @@ nav a {
     color: #ffffff;
     padding: 25px;
     text-decoration: none;
+    margin-right: 0%;
 }
 
 nav a:hover {
@@ -55,21 +56,30 @@ nav a:hover {
     color: #5c64f8;
 }
 
-
-.lists, .tasks {
-    background-color: #ffffff;
-    width: 200px;
-    color: #5c64f8;
-    margin: 0 auto;
+h1 {
+    background-color: #bbb9b9;
+    opacity: 0.7;
     border-radius: 15px;
-    margin-top: 40px;
-    padding: 20px;
-    opacity: 0.8;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    padding: 30px;
 }
 
-.lists p, .tasks p {
-    font-size: 0.9em;
-    color: #000000;
+.container a {
+    display: block;
+    opacity: 0.7;
+    text-decoration: none;
+    text-align: left;
+    border: 1px solid #bbb9b9;
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #bbb9b9;
+    color: #5c64f8;
 }
 
 footer {
@@ -77,10 +87,18 @@ footer {
     margin-top: 20px;
 }
 
-.lists h1, .tasks h1 {
-    font-size: 3em;
+#delete-btn {
+    background-color: darkred;
+    color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    margin: 10px;
 }
 
-.container {
-    display: flex;
+#delete-btn:hover {
+    background-color: #ffffff;
+    color: darkred;
+    cursor: pointer;
+    transition: 0.6s;
+    border-color: darkred;
 }

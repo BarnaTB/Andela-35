@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="static/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Karla|Quicksand" rel="stylesheet">
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <h1>To-Do App</h1>
-    <div class="container">
-        <h1>Register Here</h1>
-        <div class="form">
-            <form action="templates/todo.html" class="">
-                <label for="username">Username:</label>
-                <input id="username" class="" type="text" placeholder="Username" required>
+    <div class="background-image"></div>
+    <div class="content">
+        <h1>To-Do App</h1>
+        <div class="container">
+            <h1>Register Here</h1>
+            <div class="form">
+                <form action="templates/home.html" class="">
+                    <label for="username">Username:</label>
+                    <input id="username" class="" type="text" placeholder="Username" required>
 
-                <label for="email">Email:</label>
-                <input id="email" type="email" placeholder="Email" required>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Email" required>
 
-                <label for="password">Password:</label>
-                <input id="password" type="password" placeholder="Password" required>
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" placeholder="Password" required>
 
-                <input id="submit" type="submit" value="Register">
-            </form>
-        </div>
-        <div class="login-link">
-            <p>Do you already have an account? <a href="templates/login.html">Login Here</a></p>
+                    <input id="submit" type="submit" value="Register">
+                </form>
+            </div>
+            <div class="login-link">
+                <p>Do you already have an account? <a href="templates/login.html">Login Here</a></p>
+            </div>
         </div>
     </div>
 </body>
